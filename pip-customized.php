@@ -1,3 +1,4 @@
+<?php
 /**
  * Filter the document table headers to add product unit price.
  *
@@ -66,3 +67,5 @@ function sv_wc_pip_document_add_unit_price_cell( $cells, $document_type, $item_i
 	return $cells;
 }
 add_filter( 'wc_pip_document_table_row_cells', 'sv_wc_pip_document_add_unit_price_cell', 10, 5 );
+
+?>
